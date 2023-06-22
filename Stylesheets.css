@@ -101,7 +101,7 @@ input[type="text"] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     
-    font-size: larger;
+    font-size: 165%;
     font-weight: 500;
     color: white;
 }
