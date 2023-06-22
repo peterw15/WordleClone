@@ -15,7 +15,7 @@ body {
     border: black solid 1px;
     display: block;
 }
- 
+
 
 input[type="text"] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,9 +34,7 @@ input[type="text"] {
 
 /* buttons */
 
-.btnContainer {
-
-}
+.btnContainer {}
 
 .submitBtn {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,11 +86,21 @@ input[type="text"] {
     font-size: 153%;
 }
 
+/* header section */
+.headerContainer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-bottom: 125px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
 /* middle section */
 .middleContainer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding-top: 155px;
+    
     font-size: larger;
     font-weight: 500;
     color: white;
@@ -136,4 +144,3 @@ input[type="text"] {
 .Key:hover {
     background-color: rgb(87, 87, 87);
 }
-

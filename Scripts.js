@@ -1,12 +1,19 @@
 let currentWord; /**  CURRENT WORD TO GUESS  */
 let currentGuess; /**  CURRENT GUESS */
-let numOfGuesses;
+let stillPlaying;
+const guesses = [];
+let lives;
+
 
 function loadPage() {
     document.getElementById("entryBox").value = "";
     currentGuess = "";
-    numOfGuesses = 0;
+    stillPlaying = true;
+    lives = 5;
+    document.getElementById("numOfGuess").innerHTML = "Lives " + lives;
+    document.getElementById("entryBox").style.border = "black solid 5px";
     loadWord();
+
 }
 
 function loadWord() {
@@ -39,26 +46,39 @@ function backEntry() {
 
 
 function submitGuess() {
-   
     currentGuess = document.getElementById("entryBox").value.toUpperCase();
     currentWord = currentWord.toUpperCase();
 
-    // for(let i = 0; i < currVal.length; i++) {
-    //     if (currVal.charAt(i) == currentWord.charAt(i))
-    //     {
-
-    //     }
-    // }
-
-    if (currentGuess.length == 5) {
+    if ((currentGuess.length == 5) && stillPlaying) {
+        guesses[lives] = currentGuess;
+        
+        document.getElementById("guess" + lives.toString()).innerHTML =  currentGuess;
+        lives--;
+        document.getElementById("numOfGuess").innerHTML = "Lives: " + lives;
         if (currentGuess == currentWord) {
             document.getElementById("entryBox").style.border = "solid lightgreen 5px";
-            alert("SO GOOD OMG!!");
-
+            stillPlaying = false;
         }
-        numOfGuesses++;
-        document.getElementById("numOfGuess").innerHTML = "Number Of Guesses: " + numOfGuesses;
+        else {
+            document.getElementById("entryBox").style.border = "solid red 5px";
+        }
+        checkLives();
     }
 
     
+}
+
+function checkLives() {
+    if (lives == 0) {
+        stillPlaying = false;
+    }
+}
+
+function result(res) {
+    if (res) {
+
+    }
+    else {
+        
+    }
 }
