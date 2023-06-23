@@ -13,16 +13,19 @@ function loadPage() {
     document.getElementById("numOfGuess").innerHTML = "Lives: " + lives;
     document.getElementById("entryBox").style.border = "black solid 5px";
 
+    const grampaSwood = document.getElementById("lastGuess");
+    for (const child of grampaSwood.children) { child.innerHTML = ""; }
+
     // for (var i = 0; i < 5; i++) { 
     //     currGuess = document.getElementById("guess" + i.toString())
     //     currGuess.innerHTML = "";
     // }
 
-    document.getElementById("guess1").innerHTML = "";
-    document.getElementById("guess2").innerHTML = "";
-    document.getElementById("guess3").innerHTML = "";
-    document.getElementById("guess4").innerHTML = "";
-    document.getElementById("guess5").innerHTML = "";
+    // document.getElementById("guess1").innerHTML = "";
+    // document.getElementById("guess2").innerHTML = "";
+    // document.getElementById("guess3").innerHTML = "";
+    // document.getElementById("guess4").innerHTML = "";
+    // document.getElementById("guess5").innerHTML = "";
 
 
     document.getElementById("headerContainer").innerHTML = "Guess The Five Letter Word!";
