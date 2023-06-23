@@ -10,13 +10,19 @@
     <div class="headerContainer" id="headerContainer">
         Guess The Five Letter Word!
     </div>
+
     <div class="letterEntry">
         <div class="entryRow">
         <input id="entryBox" type="text" style="width: 300px; height: 75px; font-size: 60px; text-transform: uppercase;" maxlength="5" onkeyup="updateLetters()">
         </div>
     </div>
 
+    <div class="helpBox" id="helpBox">
+        
+    </div>
+
     <div class="middleContainer">
+
         <div id="numOfGuess">
             Lives: 5
         </div>
@@ -74,7 +80,9 @@
 
 
     <div class="btnContainer">
-        <div class="newWordBtn" onclick="loadPage()"> New Word </div>
         <div class="submitBtn" onclick="submitGuess()" id="submitBtn"> Submit </div>
+        <div class="helpBtn" onclick="help()" id="helpBtn"> Help </div>
+        <div class="newWordBtn" onclick="loadPage()"> New Word </div>
+
     </div>
 </body>

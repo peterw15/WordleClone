@@ -146,3 +146,16 @@ function result(res) {
         kbd.style.backgroundColor = 'rgb(158, 61, 61)';
     }
 }
+
+function help() {
+    let box = document.getElementById("helpBox");
+    let x = box.checkVisibility();
+    if (box.style.display = "initial") {
+        box.style.display = "none";
+    }
+    else {
+        alert()
+        box.style.display = "initial";
+    }
+
+}

@@ -41,7 +41,7 @@ input[type="text"] {
     margin-left: auto;
     margin-right: auto;
     position: fixed;
-    bottom: 10%;
+    bottom: 12%;
     left: 0;
     right: 0;
     width: 150px;
@@ -73,7 +73,7 @@ input[type="text"] {
     border: black solid 3px;
     transition: 0.25s ease-in-out;
     position: fixed;
-    bottom: 5%;
+    bottom: 1%;
     left: 0;
     right: 0;
     font-weight: bold;
@@ -81,6 +81,31 @@ input[type="text"] {
 
 .newWordBtn:hover {
     background-color: rgb(255, 200, 0);
+    border: rgb(0, 0, 0) solid 3px;
+    color: rgb(0, 0, 0);
+    font-size: 153%;
+}
+
+.helpBtn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: black solid 3px;
+    transition: 0.25s ease-in-out;
+    position: fixed;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+.helpBtn:hover {
+    background-color: rgb(234, 0, 255);
     border: rgb(0, 0, 0) solid 3px;
     color: rgb(0, 0, 0);
     font-size: 153%;
@@ -100,7 +125,7 @@ input[type="text"] {
 .middleContainer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    
+
     font-size: 165%;
     font-weight: 500;
     color: white;
@@ -143,4 +168,17 @@ input[type="text"] {
 
 .Key:hover {
     background-color: rgb(87, 87, 87);
+}
+
+/* HELP BOX */
+
+.helpBox {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1px;
+    padding: 1px;
+    width: 400px;
+    height: 400px;
+    border: 1px black solid;
+    align-items: center;
+    text-align: center;
 }
