@@ -28,7 +28,7 @@ function loadPage() {
     // document.getElementById("guess5").innerHTML = "";
 
 
-    document.getElementById("headerContainer").innerHTML = "Guess The Five Letter Word!";
+    document.getElementById("headerContainer").innerHTML = "Guess The Five Letter Word! ";
     document.getElementById("headerContainer").style.color = "white";
     document.getElementById("Keyboard").style.backgroundColor = ""; 
 
@@ -37,6 +37,7 @@ function loadPage() {
         ele[i].style.backgroundColor = "rgb(63, 63, 63)";
         ele[i].style.color = "rgb(227, 227, 227)";
     }
+
 
     loadWord();
 
@@ -148,17 +149,4 @@ function result(res) {
         txt.innerHTML = "You Lost! Word Was: " + currentWord;
         kbd.style.backgroundColor = 'rgb(158, 61, 61)';
     }
-}
-
-function help() {
-    let box = document.getElementById("helpBox");
-    let x = box.checkVisibility();
-    if (box.style.display = "initial") {
-        box.style.display = "none";
-    }
-    else {
-        alert()
-        box.style.display = "initial";
-    }
-
 }
